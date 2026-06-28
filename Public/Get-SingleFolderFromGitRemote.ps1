@@ -27,12 +27,12 @@ explicitly passed, the script derives the folder name from the leaf of -Folder.
 Alias: o
 
 .EXAMPLE
-./Get-SingleGitFolder.ps1 -Repo "octocat/Hello-World" -Folder "docs"
+Get-SingleFolderFromGitRemote -Repo "octocat/Hello-World" -Folder "docs"
 
 Downloads all files under docs/ from the main branch to ./downloaded-folder.
 
 .EXAMPLE
-./Get-SingleGitFolder.ps1 -r "microsoft/PowerShell" -f "tools/packaging" -b "master" -o "./pkg"
+Get-SingleFolderFromGitRemote -r "microsoft/PowerShell" -f "tools/packaging" -b "master" -o "./pkg"
 
 Downloads files under tools/packaging/ from the master branch into ./pkg.
 
